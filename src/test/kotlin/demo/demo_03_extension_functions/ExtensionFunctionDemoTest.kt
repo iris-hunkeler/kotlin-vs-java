@@ -1,12 +1,13 @@
 package demo.demo_03_extension_functions
 
+import model.employment.Employee
 import kotlin.test.Test
 
 internal class ExtensionFunctionDemoTest {
 
     @Test
     fun test() {
-        val person = Person("Iris Hunkeler")
+        val employee = Employee("Iris Hunkeler")
 
         // TODO: check if person works for an awesome company
     }

@@ -1,4 +1,4 @@
-package model
+package model.employment
 
 data class Company(
     val name: String

@@ -1,5 +1,6 @@
 package demo.demo_04_smart_casts
 
+import model.employment.Employee
 import kotlin.test.Test
 
 internal class SmartCastDemoTest {
@@ -8,8 +9,8 @@ internal class SmartCastDemoTest {
     fun test() {
         printValue("Test")
 
-        val aPerson = Person("Iris")
-        printValue(aPerson)
+        val aEmployee = Employee("Iris")
+        printValue(aEmployee)
     }
 
     private fun printValue(x: Any) {

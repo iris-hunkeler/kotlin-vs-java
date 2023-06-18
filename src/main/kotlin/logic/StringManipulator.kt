@@ -1,4 +1,4 @@
-package model
+package logic
 
 class StringManipulator {
     fun demonstrateStringManipulation() {

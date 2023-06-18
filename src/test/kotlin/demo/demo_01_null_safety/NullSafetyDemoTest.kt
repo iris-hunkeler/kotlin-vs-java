@@ -15,13 +15,13 @@ internal class NullSafetyDemoTest {
 
     @Test
     fun test_2() {
-        // TODO: if a random condition is true, create and assign a new person
+        // TODO: if a random condition is true, create and assign a new employee
 
 
         // TODO: print that person's employer's name
 
 
-        // TODO: create a non-nullable person
+        // TODO: create a non-nullable employee
 
 
         // TODO: print that person's employer's name

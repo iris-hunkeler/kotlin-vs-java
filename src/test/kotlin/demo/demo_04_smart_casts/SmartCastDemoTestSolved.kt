@@ -1,5 +1,6 @@
 package demo.demo_04_smart_casts
 
+import model.employment.Employee
 import kotlin.test.Test
 
 internal class SmartCastDemoTestSolved {
@@ -8,8 +9,8 @@ internal class SmartCastDemoTestSolved {
     fun test() {
         printValue("Test")
 
-        val aPerson = Person("Iris")
-        printValue(aPerson)
+        val aEmployee = Employee("Iris")
+        printValue(aEmployee)
     }
 
     private fun printValue(x: Any) {
@@ -19,7 +20,7 @@ internal class SmartCastDemoTestSolved {
         }
 
         // TODO: check if x is a Person and then print a nice summary with String templates
-        if (x is Person) {
+        if (x is Employee) {
             println(x.name)
         }
     }
