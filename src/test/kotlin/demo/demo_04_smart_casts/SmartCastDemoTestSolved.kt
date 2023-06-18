@@ -9,8 +9,8 @@ internal class SmartCastDemoTestSolved {
     fun test() {
         printValue("Test")
 
-        val aEmployee = Employee("Iris")
-        printValue(aEmployee)
+        val anEmployee = Employee("Iris")
+        printValue(anEmployee)
     }
 
     private fun printValue(x: Any) {
