@@ -12,14 +12,14 @@ internal class NullSafetyDemoTestSolved {
         var nonNullableString: String
 
         // TODO: assign values (null and not null) to nullable String and non-nullable String
-        nullableString = "some value" //success
         nullableString = null //success
+        nullableString = "some value" //success
 
         //nonNullableString = null //compile-time error
         nonNullableString = "some value" //success
 
         // TODO: print the length of both values (when one is null)
-        println(nullableString?.length)
+        println(nullableString?.length ?: 0)
         println(nonNullableString.length)
     }
 
