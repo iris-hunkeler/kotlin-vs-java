@@ -9,22 +9,25 @@ internal class NullSafetyDemoTest {
         var nullableString: String?
         var nonNullableString: String
 
-        // TODO: assign values (null and not null) to nullable String and non-nullable String
+        // TODO: assign values (null and not null) to nullable String
+
+
+        // TODO: assign values (null and not null) to not-nullable String
+
+
+        // TODO: print the length of both values
     }
 
 
     @Test
     fun test_2() {
-        // TODO: if a random condition is true, create and assign a new employee
+        // TODO: if a random condition is true, create and assign a new (nullable) student
 
+        // TODO: print that student's name
 
-        // TODO: print that person's employer's name
+        // TODO: create a non-nullable student
 
-
-        // TODO: create a non-nullable employee
-
-
-        // TODO: print that person's employer's name
+        // TODO: print that student's name
     }
 }
 

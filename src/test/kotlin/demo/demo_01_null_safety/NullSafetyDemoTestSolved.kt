@@ -1,6 +1,7 @@
 package demo.demo_01_null_safety
 
-import model.employment.Employee
+import model.university.Student
+import java.time.LocalDate
 import kotlin.random.Random
 import kotlin.test.Test
 
@@ -26,21 +27,21 @@ internal class NullSafetyDemoTestSolved {
 
     @Test
     fun test_2() {
-        // TODO: if a random condition is true, create and assign a new person
-        val employee: Employee? = if(Random.nextBoolean()) {
-            Employee("Iris")
+        // TODO: if a random condition is true, create and assign a new student
+        val student: Student? = if (Random.nextBoolean()) {
+            Student("Lisa", LocalDate.parse("2012-05-09"))
         } else {
             null
         }
 
-        // TODO: print that person's employer's name
-        println(employee?.employer?.name) // null checks required
+        // TODO: print that student's name
+        println(student?.name) // null checks required
 
-        // TODO: create a non-nullable person
-        val anotherEmployee = Employee("Anna")
+        // TODO: create a non-nullable student
+        val anotherStudent = Student("Bart", LocalDate.parse("2014-02-23"))
 
-        // TODO: print that person's employer's name
-        println(anotherEmployee.employer.name)
+        // TODO: print that student's name
+        println(anotherStudent.name)
     }
 }
 

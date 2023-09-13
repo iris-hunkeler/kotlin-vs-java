@@ -1,14 +1,16 @@
+package model;
+
 import java.util.Objects;
 
 /**
  * Example of a POJO. Compare to data class in Kotlin.
  */
-public class Person_Java {
+public class Person {
 
     private String name;
     private String address;
 
-    public Person_Java(String name, String address) {
+    public Person(String name, String address) {
         this.name = name;
         this.address = address;
     }
@@ -38,7 +40,7 @@ public class Person_Java {
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
-        } else if (!(obj instanceof Person_Java other)) {
+        } else if (!(obj instanceof Person other)) {
             return false;
         } else {
             return Objects.equals(name, other.name)

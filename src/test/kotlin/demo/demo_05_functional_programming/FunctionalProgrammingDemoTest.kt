@@ -3,9 +3,8 @@ package demo.demo_05_functional_programming
 import model.university.Student
 import java.time.LocalDate
 import kotlin.test.Test
-import kotlin.test.assertEquals
 
-internal class FunctionalProgrammingDemoTestSolved {
+internal class FunctionalProgrammingDemoTest {
 
     @Test
     fun test() {
@@ -18,14 +17,12 @@ internal class FunctionalProgrammingDemoTestSolved {
         println(students.map { "${it.name}: ${it.averageGrade}" })
 
         // TODO: filter out students with above 60 average grade, get highest 2 and sort by name
-        val topStudents = students.filter { it.averageGrade > 60 }
-            .sortedByDescending { it.averageGrade }
-            .take(2)
-            .sortedWith(compareBy { it.name })
+        val topStudents = emptyList<Student>()
+
 
         println(topStudents.map { "${it.name}: ${it.averageGrade}" })
 
-        assertEquals("Anna", topStudents[0].name)
-        assertEquals("Lisa", topStudents[1].name)
+        //assertEquals("Anna", topStudents[0].name)
+        //assertEquals("Lisa", topStudents[1].name)
     }
 }
