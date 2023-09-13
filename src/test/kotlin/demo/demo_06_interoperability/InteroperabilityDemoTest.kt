@@ -1,4 +1,4 @@
-package demo.demo_09_interoperability
+package demo.demo_06_interoperability
 
 
 import kotlin.test.Test
